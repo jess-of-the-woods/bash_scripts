@@ -4,18 +4,30 @@ clear
 # Script runs git status on files & tid/til directories..
 
 # Locations
-# tid="~/Documents/tech/tid_til"
+tid=~/Documents/tech/tid_til
 
 filesGst="`cd ~/Documents/files && git status`"
-tidGst="`cd ~/Documents/tech/tid_til && git status`"
-# tidGst="`cd $tid && git status`" #why does this not work??
+# tidGst="`cd ~/Documents/tech/tid_til && git status`"
+tidGst="`cd $tid && git status`"
 
 printf "\n"
-printf "git status of files: $filesGst"
+printf "\n"
+printf "git status of 'tid/til' & 'files' repositories"
+printf "\n"
+printf "\n"
+printf "git status of 'files' repository:"
+printf "\n"
+printf "\n"
+printf "$filesGst"
 printf "\n"
 printf "\n"
 printf "\n"
-printf "git status of tid/til: $tidGst"
+echo ">===-------------------------------------------===<"
+printf "\n"
+printf "git status of 'tid/til' repository:"
+printf "\n"
+printf "\n"
+echo "$tidGst"
 printf "\n"
 printf "\n"
 
